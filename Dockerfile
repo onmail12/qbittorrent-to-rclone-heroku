@@ -5,6 +5,7 @@ FROM developeranaz/qbittorrent2rclone:beta1
 #RUN apt install qbittorrent-nox -y
 #curl -y
 #RUN apt install rclone -y
+RUN apt-get update
 RUN apt install supervisor -y
 COPY scriptplusconf /scriptplusconf
 COPY qBconf.tar.gz /qBconf.tar.gz
